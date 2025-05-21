@@ -6,13 +6,9 @@ from langchain_community.utilities import WikipediaAPIWrapper, ArxivAPIWrapper
 from langchain_community.tools import WikipediaQueryRun, ArxivQueryRun, DuckDuckGoSearchRun
 from langchain.agents import initialize_agent, AgentType
 from langchain.callbacks import StreamlitCallbackHandler
-from dotenv import load_dotenv
 
-
-load_dotenv()
-os.environ['HF_TOKEN'] = os.getenv('HUGGINGFACE_TOKEN')
-os.environ['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY')
-
+os.environ['HF_TOKEN'] = st.secrets.HF_TOKEN
+os.environ['GROQ_API_KEY'] = st.secrets.GROQ_API_KEY 
 
 api_wrapper_arxiv = ArxivAPIWrapper(top_k_results=1, 
 doc_content_chars_max=500)
