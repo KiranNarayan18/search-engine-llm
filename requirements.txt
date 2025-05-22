@@ -1,8 +1,5 @@
 streamlit
-python-dotenv
-ipykernel
 pyPDF
-bs4
 arxiv
 fitz
 PyMuPDF 
@@ -16,9 +13,7 @@ huggingface-hub
 cassio
 datasets
 tiktoken
-openai
 PyPDF2
-gradio
 
 duckduckgo-search
 chromadb
@@ -26,12 +21,6 @@ faiss-cpu
 
 langchain
 langchain-community
-langchain-openai
-langchain-ollama
 langchain-huggingface
 langchain-chroma
 langchain-groq
-langserve
-langgraph >= 0.2.28
-
-exceptiongroup==1.2.2
